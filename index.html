@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <div class="main">
+    <div class="title">Tip Calculator</div>
+    <div class="card">
+      <div class="billInput">
+        <label for="billInput">Total Bill</label>
+        <input id="billInput" class="inputStyle" type="number" min="0" placeholder="0"  />
+      </div>
+
+      <div class="Input">
+        <label for="tippercentage">Tip %: <span id="tipValue">15%</span></label>
+        <input
+          id="tippercentage"
+          class="inputStyle"
+          type="range"
+          min="0"
+          max="30"
+          step="5"
+          value="15"
+        />
+      </div>
+
+      <div class="Input">
+        <label for="noofpeople">No Of People</label>
+        <input id="noofpeople" class="inputStyle" type="number" min="1" value="1" />
+      </div>
+
+      <div class="resultCard">
+        <div class="resultRow">
+          <label for="tipResult">Tip</label>
+          <input id="tipResult" type="text" readonly />
+        </div>
+        <div class="resultRow">
+          <label for="totalResult">Total</label>
+          <input id="totalResult" type="text" readonly />
+        </div>
+        <div class="resultRow">
+          <label for="eachResult">Each Person to Pay</label>
+          <input id="eachResult" type="text" readonly />
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
